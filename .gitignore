@@ -1,0 +1,4 @@
+/beer-database
+/.ipynb_checkpoints
+/data/*.csv
+/data/*.json
