@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thread>
+            <tr>
+                {% comment %} <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">TOTAL</th> {% endcomment %}
+            </tr>
+        </thread>
+        <tbody>
+            {% comment %} {% for purchase in purchases %}
+                <td>{{purchase['symbol']}}</td>
+                <td>{{purchase['name']}}</td>
+                <td>{{purchase['share']}}</td>
+                <td>{{purchase['price']}}</td>
+            {% endfor %} {% endcomment %}
+        </tbody>
+    </table>   
+{% endblock %}
