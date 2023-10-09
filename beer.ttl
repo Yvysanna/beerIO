@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/cs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Classes
+ex:Beer rdf:type rdfs:Class .
+ex:Brewery rdf:type rdfs:Class .
+ex:flavorProfile rdf:type rdfs:Class .
+
+# Properties
+ex:hasBeer rdf:type rdf:Property ;
+    rdfs:domain ex:Brewery ;
+    rdfs:range ex:Beer .
+
+ex:hasBrewery rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range ex:Brewery .
+
+ex:hasFlavorProfile rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range ex:flavorProfile .
+
+# DataType Properties
+ex:hasDescription rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range xsd:string .
+
+ex:alcoholPercentage rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range xsd:float .
+
+ex:ABV rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range xsd:float .
+
+ex:IBU rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range xsd:float .
+
+ex:colorCode rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range xsd:string .
+
+ex:glassToServe rdf:type rdf:Property ;
+    rdfs:domain ex:Beer ;
+    rdfs:range xsd:string .
+
+ex:name rdf:type rdf:Property ;
+    rdfs:domain ex:Brewery, ex:Beer ;
+    rdfs:range xsd:string .
+
+ex:hasAstringency rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasBody rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasAlcohol rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasBitter rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasSweet rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasSour rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasFruity rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasHopps rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasSpices rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
+
+ex:hasMalt rdf:type rdf:Property ;
+    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:range xsd:integer .
