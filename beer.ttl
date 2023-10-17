@@ -52,41 +52,41 @@ ex:name rdf:type rdf:Property ;
     rdfs:range xsd:string .
 
 ex:hasAstringency rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasBody rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasAlcohol rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasBitter rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasSweet rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasSour rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasFruity rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasHopps rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasSpices rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
 
 ex:hasMalt rdf:type rdf:Property ;
-    rdfs:domain ex:hasFlavorProfile ;
+    rdfs:domain ex:flavorProfile ;
     rdfs:range xsd:integer .
